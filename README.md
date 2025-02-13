@@ -23,9 +23,9 @@ The project follows a **client-server model**:
 - 🌐 **Server Side:** PHP scripts on an **Apache server** that process requests, interact with the **MySQL database**, and return responses.
 - 🗄 **Database:** MySQL stores **user details, product listings, and order records**.
 
-##📌 Usage
-**Register & Log in** – Create an account or sign in.
-**Browse Products** – View the catalog of phones and electronics.
-**View Product Details** – Check descriptions and images.
-**Add to Cart** – Select items and add them to the cart.
-**Checkout & Order** – Place orders through the PHP backend.
+## 📌 Usage
+- **Register & Log in** Create an account or sign in.
+- **Browse Products** View the catalog of phones and electronics.
+- **View Product Details** Check descriptions and images.
+- **Add to Cart** Select items and add them to the cart.
+- **Checkout & Order** Place orders through the PHP backend.
