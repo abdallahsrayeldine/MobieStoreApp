@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".homepage">
+
+
+    <ImageView
+        android:id="@+id/image1"
+        android:layout_width="405dp"
+        android:layout_height="222dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.514"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/background" />
+
+    <TextView
+        android:layout_width="211dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="360dp"
+        android:paddingBottom="8dp"
+        android:text="The Categories"
+        android:textColor="#53288E"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TextSizeCheck" />
+
+    <RadioGroup
+        android:id="@+id/rg"
+        android:layout_width="261dp"
+        android:layout_height="226dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="452dp"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <!-- Laptop Radio Button -->
+
+        <!-- Phone Radio Button -->
+
+        <RadioButton
+            android:id="@+id/phone"
+            android:layout_width="187dp"
+            android:layout_height="69dp"
+            android:layout_marginTop="32dp"
+
+            android:layout_marginEnd="16dp"
+            android:checked="true"
+            android:drawableStart="@drawable/phones"
+            android:drawablePadding="5dp"
+            android:gravity="center_vertical"
+            android:padding="8dp"
+            android:text="phone"
+            android:textColor="#53288E"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:cornerRadius="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/image1" />
+
+        <RadioButton
+            android:id="@+id/laptop"
+            android:layout_width="224dp"
+            android:layout_height="67dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="16dp"
+            android:drawableStart="@drawable/laptob"
+            android:drawablePadding="5dp"
+            android:gravity="center_vertical"
+            android:padding="8dp"
+            android:text="laptop"
+            android:textColor="#53288E"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:cornerRadius="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/image1" />
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="73dp"
+        android:layout_marginTop="680dp"
+        android:layout_marginEnd="92dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="8dp"
+        android:text="Choose your preferred brand"
+        android:textColor="#6940A2"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/brand_spinner"
+        android:layout_width="319dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="776dp"
+        android:layout_marginEnd="92dp"
+        android:padding="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/Next"
+        android:layout_width="131dp"
+        android:layout_height="61dp"
+        android:layout_marginTop="866dp"
+        android:onClick="next"
+        android:text="Next"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

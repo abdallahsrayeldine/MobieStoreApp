@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".edit_items">
+
+    <EditText
+        android:id="@+id/itemprice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="684dp"
+        android:ems="10"
+        android:hint="Add item price"
+        android:inputType="number"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/itemname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="268dp"
+        android:ems="10"
+        android:hint="Add item name"
+        android:inputType="text"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="144dp"
+        android:text="Add item"
+        android:textSize="48sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/Add"
+        android:layout_width="211dp"
+        android:layout_height="102dp"
+        android:layout_marginTop="780dp"
+        android:text="Add"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/logout"
+        android:layout_width="177dp"
+        android:layout_height="73dp"
+        android:layout_marginTop="32dp"
+        android:text="Logout"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.945"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/rg"
+        android:layout_width="261dp"
+        android:layout_height="226dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="332dp"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <!-- Laptop Radio Button -->
+
+        <!-- Phone Radio Button -->
+
+        <RadioButton
+            android:id="@+id/phone"
+            android:layout_width="187dp"
+            android:layout_height="69dp"
+            android:layout_marginTop="32dp"
+
+            android:layout_marginEnd="16dp"
+            android:checked="true"
+            android:drawableStart="@drawable/phones"
+            android:drawablePadding="5dp"
+            android:gravity="center_vertical"
+            android:padding="8dp"
+            android:text="phone"
+            android:textColor="#53288E"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:cornerRadius="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/image1" />
+
+        <RadioButton
+            android:id="@+id/laptop"
+            android:layout_width="224dp"
+            android:layout_height="67dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="16dp"
+            android:drawableStart="@drawable/laptob"
+            android:drawablePadding="5dp"
+            android:gravity="center_vertical"
+            android:padding="8dp"
+            android:text="laptop"
+            android:textColor="#53288E"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:cornerRadius="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/image1" />
+    </RadioGroup>
+
+    <Spinner
+        android:id="@+id/brand_spinner2"
+        android:layout_width="272dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="584dp"
+        android:layout_marginEnd="88dp"
+        android:padding="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/goback"
+        android:layout_width="177dp"
+        android:layout_height="73dp"
+        android:layout_marginTop="32dp"
+        android:text="Back"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.059"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
